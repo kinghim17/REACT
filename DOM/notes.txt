@@ -1,0 +1,21 @@
+1:
+What is CORS?
+CORS stands for Cross-Origin Resource Sharing. It is a security feature implemented by web browsers to prevent unauthorized requests between different origins (domains, subdomains, or ports).
+
+Why is CORS Needed?
+By default, web browsers block requests made from one origin to another origin for security reasons. This is known as the Same-Origin Policy. For example:
+
+If your frontend is hosted at http://127.0.0.1:5500 and it tries to make a request to a backend API at http://localhost:3000, the browser will block this request unless the backend explicitly allows it using CORS.
+CORS allows the server to specify which origins are permitted to access its resources.
+
+2:
+
+What does body-parser do?
+body-parser is a middleware in Node.js used to parse the body of incoming HTTP requests. It extracts the data sent in the request body and makes it available in the req.body object in your Express application.
+
+Why is body-parser Needed?
+When you send data to a server (e.g., through a POST request), the data in the request body is often in formats like JSON or URL-encoded strings. By default, Express cannot parse this data, so body-parser is used to handle the parsing and make the data easily accessible.
+
+3:
+Debouncing in JavaScript
+Debouncing is a programming concept used to ensure that a function is executed only after a specific time has passed since its last invocation. It helps optimize performance by reducing the frequency of function execution, particularly in scenarios like handling user input, scroll events, or API calls.
