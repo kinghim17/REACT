@@ -32,3 +32,15 @@
 </body>
 
 </html>
+
+
+
+/**
+function buttonComponentReRender() {
+  const buttonParent = document.getElementById("buttonParent"); // Store the reference
+  buttonParent.innerHTML = ""; // Clear the content
+  const component = buttonComponent(state.count);
+  buttonParent.appendChild(component); // Append the new component
+}
+you dont need to give document.getelementbyID two times you can do it like this
+/
